@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #af5274;
+    background-image: linear-gradient(90deg, #FC5E55, #FA4083);
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+}
+.con{
+    margin: 0 auto;
+    width: 60vw;
+    background-image: url(images/image-lion-background.png);
+    background-position: top;
+}
+h1{
+    font-size: 2.2rem; 
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+p{
+    line-height: 1.5rem;
+}
+header{
+    width: 100%;
+    min-height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid white;
+}
+.logo{
+    width: 150px;
+    height: 100px;
+    background-image: url(images/logo-roar-bikes.png);
+    background-repeat: no-repeat;
+    align-self: center;
+}
+nav{
+    align-self: center;
+    box-sizing: border-box;
+}
+.menu{
+    display: flex;
+}
+.menu a ol{
+    margin: 0 0.3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+    border: 1px solid whitesmoke;
+    padding: 5px 3px;
+    transition: 0.4s color, background-color ease-in-out;
+}
+.menu a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.menu a ol:hover{
+    color: #FA4083;
+    background-color: white;
+}
+main{
+    width: 100%;
+    min-height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hbox1{
+    flex: 2 2 100px;
+    margin-right: 10px;
+}
+.t1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+.hbox2{
+    flex: 1 1 6.25rem;
+    min-height: 11.25rem;
+    font-weight: 300;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.582);
+    background-image: url(images/image-bike-repair-service.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cards{
+    width: 100%;
+    min-height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+}
+.card{
+    flex: 1 1 12rem;
+    min-height: 12rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card p{
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+.c1{
+    background-image: url(images/image-background-card1.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 0;
+    padding: 15px;
+    text-align: center;
+}
+.c2{
+    background-image: url(images/image-background-card2.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 15px;
+    text-align: center;
+}
+.c3{
+    background-image: url(images/image-background-card3.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0;
+    padding: 15px;
+    text-align: center;
+}
+h2{
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 48;
+  font-size: 3.5rem;
+  
+}
+.testi{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+article{
+    flex: 1 1 47%;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid white;
+    margin: 8px;
+}
+@media (max-width:700px){
+    .con{
+        width: 65vw;
+        background-image: url(images/image-lion-background.png);
+    }
+    header{
+        width: 100%;
+        min-height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card{
+        flex: 1 1 12rem;
+    }
+}
+@media (max-width:885px){
+    .con{
+        width: 65vw;
+        background-image: url(images/image-lion-background.png);
+    }
+    .cards{
+        flex-wrap: no-wrap;
+    }
+    .card{
+        flex: 1 1 12rem;
+        min-height: 150px;
+        margin: 5px;
+    }
+    header{
+        width: 100%;
+        min-height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (max-width:550px){
+    .con{
+        width: 80vw;
+        background-image: url(images/image-lion-background.png);
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+    .card{
+        flex: 1 1 10.312rem;
+        min-height: 150px;
+        margin: 5px;
+        box-sizing: content-box;
+    }
+    .card p{
+        margin: 0 90px;
+    }
+    header{
+        width: 100%;
+        min-height: 20%;
+    }
+}
